@@ -1,0 +1,117 @@
+.event {
+  padding: var(--py) var(--px);
+  background: var(--cultured);
+}
+
+.event-left {
+  position: relative;
+  max-width: max-content;
+  margin-bottom: 50px;
+}
+
+.event .banner-img {
+  width: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.event .play {
+  position: absolute;
+  bottom: 100px;
+  right:    0;
+  padding: 30px 40px;
+  background: var(--red-orange-color-wheel);
+  display:     flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px hsla(15, 100%, 55%, 0.7);
+}
+
+.event .play-icon {
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px transparent;
+}
+
+.event .play ion-icon {
+  display: block;
+  color: var(--white);
+  font-size: 70px;
+  margin: -8px;
+}
+
+.event .play p {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-7);
+  color: var(--white);
+}
+
+.event .section-subtitle { margin-bottom: 15px; }
+
+.event .section-title { margin-bottom: 30px; }
+
+.event-card-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.event-card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.1);
+  border-right: 5px solid transparent;
+  transition: var(--default-transition);
+}
+
+.event-card .content-left {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 16px 0 -15px var(--light-gray);
+}
+
+.event-card .day {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-7);
+  color: var(--blue-crayola);
+}
+
+.event-card .month {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-5);
+  color: var(--blue-crayola);
+}
+
+.event .schedule {
+  display:         flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.event .schedule p {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-6);
+  color: var(--sonic-silver);
+}
+
+.event .schedule .time {
+  padding-right: 20px;
+  margin-right: 20px;
+  box-shadow: 4px 0 0 -3px var(--light-gray);
+}
+
+.event-card .event-name {
+  color: var(--oxford-blue);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-7);
+  line-height: 1.6;
+  text-align: center;
+  transition: var(--default-transition);
+}
+
+.event-card:hover { border-color: var(--red-orange-color-wheel); }
+
+.event-card:hover .event-name { color: var(--red-orange-color-wheel); }

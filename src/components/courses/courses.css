@@ -1,0 +1,12 @@
+.wborder {
+  border-top: 0px solid transparent !important;
+}
+.whatsapp ion-icon {
+  height: 50px !important;
+  width: 50px !important;
+  color: rgb(1, 131, 22);
+}
+
+.inp,.butt{
+  display: none;
+}

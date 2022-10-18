@@ -1,0 +1,99 @@
+.cg {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lavender-blue) !important;
+  padding: 30px 15px;
+}
+/* .h2 {
+  color: var(--ultramarine-blue);
+  text-align: center;
+  border-bottom: 3px solid var(--oxford-blue);
+  padding-bottom: 20px;
+} */
+.ct {
+  text-align: center;
+}
+.section-title {
+  font-size: var(--fs-3);
+  margin: 10px auto;
+}
+.ct a {
+  font-size: var(--fs-5) !important;
+}
+.ct a:hover {
+  color: var(--oxford-blue) !important;
+}
+.cc {
+  padding-top: 20px;
+}
+.wrapper {
+  justify-content: center !important;
+  border-top: 3px solid var(--oxford-blue);
+  padding-top: 20px;
+}
+.course-grid li {
+  list-style: circle;
+  margin-left: 30px;
+}
+
+h1:not(:first-child) {
+  color: var(--ultramarine-blue);
+}
+h1:first-child {
+  color: var(--oxford-blue);
+  font-size: var(--fs-4);
+}
+.csection {
+  min-height: 100vh;
+  background-color: rgb(19, 111, 187) !important;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.item-head{
+  margin: 10px auto;
+  font-size: var(--fs-4);
+  color: #fff;
+}
+
+.input {
+  width: 80% !important;
+  margin: 15px auto;
+  border-radius: 7px !important;
+}
+.inputwrapp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.address a {
+color:#fff !important;
+}
+.address  {
+margin: 25px auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.submit {
+  background: var(--oxford-blue);
+  width: 100px;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 7px;
+  color: #fff;
+}
+.cinfo {
+  width: 50%;
+margin: 0 auto;
+display: flex;
+flex-grow: 1;
+flex-direction: column;
+}
+
+@media (max-width: 916px) {
+  .cinfo {
+    width: 100%;
+  }
+}
