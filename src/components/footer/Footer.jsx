@@ -100,13 +100,14 @@ const url= `https://wa.me/+212661771140?text=mail :${mail}`
           <h4 class="item-heading">Subscribe Now</h4>
 
           <div class="wrapper">
-            <form action={url}>
+            <form action={''}>
             <input 
             onChange={(e)=>setmail(e.target.value)}
             type="text" name="subscribe" placeholder="Email Address"/>
             
             <button
             type='submit'
+            onClick={()=>window.open(url).focus}
             class="send-btn">
               <ion-icon name="paper-plane"></ion-icon>
             </button>

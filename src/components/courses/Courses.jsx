@@ -58,7 +58,8 @@ submitt.click()
                 <div class="enrolled">
                   <form action={`https://wa.me/+212661771140?text= Salut! \nj'ai vu ceci ${item.title} sur votre website`}>
                     <input className='inp' type="text" defaultValue={item.title} />
-                    <button ref={submitt} className='' type='submit'>
+                    <button ref={submitt}
+                    onClick={()=>window.open(`https://wa.me/+212661771140?text= Salut! \nj'ai vu ceci (${item.title}) sur votre website`,'_blank').focus()} className='' type='submit'>
                  <a  onClick={()=>submit()} 
              href="" className='whatsapp'>
               <ion-icon name="logo-whatsapp"></ion-icon>

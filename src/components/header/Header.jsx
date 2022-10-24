@@ -1,10 +1,11 @@
 import React, {Fragment, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import './header.css'
 
 function  Header() {
   const [active,setActive]=useState(false);
 const ContactUs=useNavigate()
+const home=useNavigate()
     return (
        <header>
 
@@ -21,10 +22,10 @@ const ContactUs=useNavigate()
             <a href="/" onClick={()=>setActive(false)}>Home</a>
           </li>
           <li className="nav-item">
-            <a href="#about" onClick={()=>setActive(false)}>About Us</a>
+            <a href="#about" onClick={()=>{setActive(false);home('/')}}>About Us</a>
           </li>
           <li className="nav-item">
-            <a href="#category" onClick={()=>setActive(false)}>Formations</a>
+            <a href="#category" onClick={()=>{setActive(false);home('/')}}>Formations</a>
           </li>
           {/* <li className="nav-item">
             <a href="#blog" onClick={()=>setActive(false)} >Blog</a>

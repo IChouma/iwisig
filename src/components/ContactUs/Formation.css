@@ -4,12 +4,14 @@
   background-color: var(--lavender-blue) !important;
   padding: 30px 15px;
 }
-/* .h2 {
-  color: var(--ultramarine-blue);
-  text-align: center;
-  border-bottom: 3px solid var(--oxford-blue);
-  padding-bottom: 20px;
-} */
+.phoneinput{
+  appearance: textfield;
+}
+.phoneinput::-webkit-outer-spin-button,
+.phoneinput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .ct {
   text-align: center;
 }
